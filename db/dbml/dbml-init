@@ -1,0 +1,13 @@
+Table exchange_rate as EX {
+  id int [pk, increment]
+  created_at timestamptz [default:'now()']
+  crypto_currency_Id varchar
+  fiat_currency_acronym varchar 
+
+  indexes {
+    created_at,
+    crypto_currency_Id,
+    fiat_currency_acronym
+    
+  }
+}
