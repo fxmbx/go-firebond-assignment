@@ -1,5 +1,9 @@
 # FireBond Assignment API
 
+Postman [click] (https://documenter.getpostman.com/view/13997448/2s93zCZ1BX)
+
+BaseUrl [click] (https://firebond-api.onrender.com/api)
+
 To run the application you can go the traditional terminal way, use the custom made make commands or docker-compose command
 
 ## Usage
