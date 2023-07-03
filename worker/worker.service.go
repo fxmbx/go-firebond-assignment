@@ -74,9 +74,10 @@ func (ws *workerService) Worker() {
 						Valid:  true,
 					},
 					FiatCurrencyAcronym: sql.NullString{
-						String: fmt.Sprintf("%.2f", exchangeRates[fiat]),
+						String: fiat,
 						Valid:  true,
 					},
+					ExchanageRate: fmt.Sprintf("%.2f", exchangeRates[fiat]),
 				}
 				_, err = ws.store.InsertExchangeRate(context.TODO(), arg)
 				if err != nil {
